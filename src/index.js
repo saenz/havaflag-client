@@ -1,3 +1,4 @@
+// @flow
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
@@ -6,10 +7,15 @@ import App from './App';
 //import config from "./config";
 import { BrowserRouter as Router } from 'react-router-dom';
 
-ReactDOM.render(
-	<Router>
-		<App />
-	</Router>
-	, document.getElementById('root'));
-
+const rootElement = document.getElementById('root')
+if (rootElement == null) {
+ 	throw new Error('no root element')
+} else {
+	ReactDOM.render(
+		<Router>
+			<App />
+		</Router>
+		, rootElement
+	);
+}
 //registerServiceWorker();

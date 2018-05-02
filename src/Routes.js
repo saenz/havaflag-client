@@ -7,14 +7,10 @@ import AppliedRoute from './components/AppliedRoute';
 import AuthenticatedRoute from './components/AuthenticatedRoute';
 import UnauthenticatedRoute from './components/UnauthenticatedRoute';
 import Home from 'components/Home/Loadable';
+import Category from 'components/Category/Loadable';
 import Products from 'components/Products/Loadable';
 
 // routes
-
-const Category = Loadable({
-  loader: () => import("./components/Category"),
-  loading: LoadingIndicator
-});
 
 const Login = Loadable({
   loader: () => import("./components/Login"),

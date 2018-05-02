@@ -7,7 +7,7 @@ const Home = () => (
     	<Helmet>
         	<title>Home Page</title>
           	<meta name="description" content="Jeff Saenz home page" />
-        </Helmet>
+      </Helmet>
     	<div>
     		<H2>Home</H2>
     		This is the text of the home page.

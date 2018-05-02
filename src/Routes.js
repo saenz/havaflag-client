@@ -29,7 +29,7 @@ const Admin = Loadable({
 
 type Props = {
   childProps : { isAuthenticated:boolean,userHasAuthenticated:() => mixed}
-}
+};
 
 export default ({ childProps } : Props) =>
 	<Switch>

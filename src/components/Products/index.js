@@ -7,14 +7,14 @@ import H2 from 'components/H2';
 
 type MatchProps = {
   match: {url : string}
-}
+};
 
 type ProductData = {
   id: number,
   name: string,
   description: string,
   status:string
-}
+};
 
 const Products = ({ match } : MatchProps ) => {
 
@@ -57,7 +57,7 @@ const Products = ({ match } : MatchProps ) => {
         </Link>
       </li>
     )
-  })
+  });
 
   return(
     <div>

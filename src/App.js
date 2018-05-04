@@ -8,7 +8,7 @@ import { Link, withRouter } from "react-router-dom";
 import Helmet from 'react-helmet';
 import Auth from './libs/Auth'
 import Header from 'components/Header';
-import Footer from 'components/Footer';
+import Footer from 'pages/Footer';
 import styled from 'styled-components';
 import Routes from './Routes';
 
@@ -28,12 +28,12 @@ type Props = {
   match: {},
   location: {},
   history: { push : (string) => void }
-}
+};
 
 type State = {
   isAuthenticated: boolean,
   isAuthenticating: boolean
-}
+};
 
 class App extends Component<Props,State> {
 
@@ -89,7 +89,7 @@ class App extends Component<Props,State> {
           <meta name="description" content="app.js description" />
         </Helmet>
         <Header />
-        <nav className="navbar navbar-light">
+        <nav className="test navbar navbar-light">
           <ul className="nav navbar-nav">
             <li><Link to="/">Home</Link></li>
             <li><Link to="/category">Category</Link></li>

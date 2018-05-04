@@ -1,0 +1,21 @@
+api/
+	fakeApi.js
+
+store
+-----
+derived data?
+auth
+	user
+		firstName
+		lastName
+		gender
+		maritalStatus
+		reservation
+			startDate
+			endDate
+			roomType
+	isFetching
+rooms
+	list
+	isFetching
+

@@ -7,23 +7,19 @@ import AppliedRoute from './components/AppliedRoute';
 import AuthenticatedRoute from './components/AuthenticatedRoute';
 import UnauthenticatedRoute from './components/UnauthenticatedRoute';
 import Home from 'components/Home/Loadable';
-import Category from 'components/Category/Loadable';
+import Login from 'components/Login/Loadable';
+import Category from 'modules/category/Loadable';
 import Products from 'components/Products/Loadable';
+//import NotFound from 'pages/notfound/Loadable';
 
-// routes
-
-const Login = Loadable({
-  loader: () => import("./components/Login"),
-  loading: LoadingIndicator
-});
-
+//routes 
 const NotFound = Loadable({
-  loader: () => import("./components/NotFound"),
+  loader: () => import("pages/NotFound"),
   loading: LoadingIndicator
 });
 
 const Admin = Loadable({
-  loader: () => import("./components/Admin"),
+  loader: () => import("pages/Admin"),
   loading: LoadingIndicator
 });
 

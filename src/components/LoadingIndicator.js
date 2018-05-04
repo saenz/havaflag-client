@@ -5,7 +5,7 @@ type Props = {
   isLoading:boolean,
   error: string,
   timedOut: boolean
-}
+};
 
 const LoadingIndicator = ({isLoading, error, timedOut} : Props) => {
   if (isLoading) {

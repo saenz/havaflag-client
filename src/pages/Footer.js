@@ -1,3 +1,4 @@
+import React from 'react';
 import styled from 'styled-components';
 
 const Wrapper = styled.footer`
@@ -7,4 +8,10 @@ const Wrapper = styled.footer`
   border-top: 1px solid #666;
 `;
 
-export default Wrapper;
+const Footer = () => (
+  <Wrapper>
+    <h2>Footer</h2>
+  </Wrapper>
+)
+
+export default Footer;

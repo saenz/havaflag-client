@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const Wrapper = styled.article`
   padding-top: 100px;
-  text-align: center;
+  text-align: left;
 `;
 
 export default () =>

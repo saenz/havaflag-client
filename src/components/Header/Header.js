@@ -11,15 +11,21 @@ const Wrapper = styled.header`
   background-color: #e2e2e2;
 `;
 
+const H3 = styled.h3`
+	color: blue;
+`
+const Container = styled.div`
+	color: red;
+`
 class Header extends React.Component {
 	render() {
    	return (
 			<Wrapper>
-				<div className="container">
-					<h3>Header</h3>
+				<Container>
+					<H3>Header</H3>
 					<Navigation />
 					<span>Your Company</span>
-		    	</div>
+		    	</Container>
 	  		</Wrapper>
 		)
 	}

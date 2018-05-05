@@ -19,7 +19,7 @@ class Layout extends React.Component {
 
   render() {
     return (
-      <Site>
+      <div className='layout'>
         <Helmet
           titleTemplate="%s - Saenz"
           defaultTitle="default title"
@@ -31,7 +31,7 @@ class Layout extends React.Component {
           {this.props.children}
         </Content>
         <Footer />
-      </Site>
+      </div>
     );
   }
 }
